@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #2088d3;
+  --main-color-hover: #0784dd;
+  --main-transition: 0.4s;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.err {
+  background-color: #da1313de;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2.5;
+  text-align: center;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .err {
+    font-size: 16px;
+  }
+}
+
+/* ================== START NAVBAR ================== */
+.navbar {
+  height: 75px;
+  background-color: var(--main-color) !important;
+}
+.navbar .navbar-brand {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+.navbar .offcanvas-body {
+  text-align: center;
+  padding: 0;
+}
+.navbar .offcanvas-body .navbar-nav {
+  padding: 0 !important;
+}
+.navbar .offcanvas-body .nav-item {
+  margin: 5px 0;
+}
+.navbar .offcanvas-body .nav-item .nav-link {
+  padding: 15px 0 !important;
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+  transition: var(--main-transition);
+}
+.navbar .offcanvas-body .nav-item .nav-link:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+/* ================== END NAVBAR ================== */
+
+/* ================== START VIEW PAGE ================== */
+.view-search-parent {
+  position: relative;
+  background-image: url('../img/decisions.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.view-search-parent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: #2125299e;
+}
+
+.view-search-parent .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.view-search-parent form {
+  position: relative;
+  padding: 20px;
+  width: 500px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  border-radius: 6px;
+  margin: 50px 0;
+  background: transparent;
+  border: 1px solid #eeeeee47;
+}
+.view-search-parent form label {
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}
+.view-search-parent form input {
+  box-shadow: none !important;
+  height: 45px;
+  text-align: left;
+  transition: var(--main-transition);
+}
+.view-search-parent form input:focus {
+  border-color: var(--main-color);
+}
+.view-search-parent form .srh-btn {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  background-color: var(--main-color);
+  border: none;
+  height: 48px;
+  transition: var(--main-transition);
+}
+.view-search-parent form .srh-btn:hover {
+  background-color: var(--main-color-hover);
+}
+/* ================== END VIEW PAGE ================== */
+
+/* ================== START FOOTER ================== */
+.footer-parent {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.footer-parent .copyright {
+  text-align: center;
+}
+.footer-parent .copyright p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .footer-parent .copyright p {
+    font-size: 14px !important;
+  }
+  .footer-parent .copyright span {
+    font-size: 14px !important;
+  }
+}
+.footer-parent .copyright span {
+  font-size: 17px;
+  font-weight: 500;
+}
+/* ================== START FOOTER ================== */
+
+
+
+
+
+
+/* ================== START RESULT PAGE ================== */
+.result-client-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+@media (max-width: 767px) {
+  .result-client-table table thead th {
+    padding: 10px !important;
+    font-size: 15px !important;
+  }
+}
+.result-client-table table tr td {
+  text-align: center;
+  border: 1px solid #eee;
+}
+.result-client-table table thead th {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--main-color);
+  border: 1px solid #fff;
+}
+.result-client-table table tbody tr td {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px;
+}
+.result-client-table table tbody .show-btn {
+  padding: 5px 15px;
+  background-color: #ffc107d4;
+  border-radius: 4px;
+  color: #fff;
+}
+.result-client-table .srh-btn a {
+  color: #fff;
+  display: block;
+}
+.result-client-table .srh-btn {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  background-color: var(--main-color);
+  border: none;
+  height: 48px;
+  margin-top: 15px;
+  transition: var(--main-transition);
+}
+.result-client-table .srh-btn:hover {
+  background-color: var(--main-color-hover);
+}
+
+/* --- styling  main title --- */
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+/* --- styling  main title --- */
+/* ================== END RESULT PAGE ================== */

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #2088d3;
+  --main-color-hover: #0784dd;
+  --main-transition: 0.4s;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.err {
+  background-color: #da1313de;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2.5;
+  text-align: center;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .err {
+    font-size: 16px;
+  }
+}
+
+/* ================== START LOGIN PAGE ================== */
+.login-page-parent .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97vh;
+}
+.login-page-parent form {
+  padding: 20px;
+  width: 350px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+}
+.login-page-parent form label {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  color: #888888;
+}
+.login-page-parent form input {
+  box-shadow: none !important;
+  height: 45px;
+  text-align: left;
+  transition: var(--main-transition);
+}
+.login-page-parent form input:focus {
+  border-color: var(--main-color);
+}
+.login-page-parent form .srh-btn {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  background-color: var(--main-color);
+  border: none;
+  height: 48px;
+  transition: var(--main-transition);
+}
+.login-page-parent form .srh-btn:hover {
+  background-color: var(--main-color-hover);
+}
+/* ================== END LOGIN PAGE ================== */
